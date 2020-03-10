@@ -1,0 +1,61 @@
+/* DEBUG:  */
+/* #000000
+#808080
+#141922
+#ffffff
+#282828
+#000000
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  color: white;
+}
+
+
+header{
+  background-color: black;
+  border: white 1px solid;
+  width: 15vw;
+  height: calc(100vh - 80px);
+  position: fixed;
+  float: left;
+}
+#upgrade_top_bar{
+  position: fixed;;
+  width: 85vw;
+  margin-left: 15vw;
+  background-color: black;
+  opacity: 0.4;
+}
+#upgrade_top_bar h1{
+  text-align: right;
+}
+main{
+  background-color: #141922;
+  width: 85vw;
+  height: calc(100vh - 80px);
+  margin-left: 15vw;
+  float: left;
+}
+h1{
+  color: white;
+  font-size: 50px;
+}
+footer{
+    background-color: #282828;
+    border: white 1px solid;
+    width: 100vw;
+    height: 80px;
+    bottom: 0;
+    position: fixed;
+}
+
+
+.flex-container{
+  display: flex;
+}
