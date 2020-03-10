@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mediaq.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Spotify Web</title>
   </head>
@@ -12,8 +13,78 @@
 
 
     <header>
-      <!-- qui barra laterale -->
-      <h1>laterale</h1>
+      <div class="flex-header">
+
+        <!-- blocco che contiene home - cerca e libreria -->
+        <div id="box_nav_menu" class="nav_menu_box">
+          <div id="box_logo" class="nav_menu_box_item">
+            <a href="#">
+              <img src="assets/img/logo.svg" alt="Logo Spotify">
+            </a>
+          </div> <!-- logo della barra laterale -->
+          <div class="nav_menu_box_item">
+            <a class="active_text" href="#">
+              <img src="assets/img/home.svg" alt="">
+              <span>Home</span>
+            </a>
+          </div>
+          <div class="nav_menu_box_item">
+            <a href="#">
+              <img src="assets/img/search.svg" alt="">
+              <span>Cerca</span>
+            </a>
+          </div>
+          <div class="nav_menu_box_item">
+            <a href="#">
+              <img src="assets/img/libreria.svg" alt="">
+              <span>Libreria</span>
+            </a>
+          </div>
+        </div>
+        <!-- blocco che contiene le playlist -->
+        <div id="box_playlist" class="nav_menu_box">
+          <!-- pulsante per nuova playlist -->
+          <h3>Playlist</h3>
+          <div id="new_playlist">
+            <a href="#">
+
+              <div id="plus">
+                <span>Crea Playlist</span>
+              </div>
+
+            </a>
+            <br>
+          </div>
+          <!-- elenco playlist già create -->
+          <div id="playlists">
+            <ul>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+            </ul>
+          </div>
+          <!-- blocco inferiore barra sinistra con nome utente -->
+        </div>
+        <!-- blocco installa e profilo -->
+        <div id="box_profile" class="nav_menu_box">
+          <div id="install">
+            <img src="assets/img/download.svg" alt="">
+            <span>Installa app</span>
+          </div>
+
+          <div id="divider"></div>
+          <div id="profile" class="flex-container">
+            <img src="assets/img/profile.svg" alt="">
+            <span>Mario Rossi</span>
+          </div>
+        </div>
+
+      </div>
     </header>
 
     <div id="upgrade_top_bar">
@@ -29,7 +100,7 @@
         <h1>Spotify</h1>
         <!-- il vero main -->
         <article class="recently">
-          
+
         </article>
         <article class="created_for">
 

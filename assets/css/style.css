@@ -1,11 +1,4 @@
-/* DEBUG:  */
-/* #000000
-#808080
-#141922
-#ffffff
-#282828
-#000000
-*/
+/* generic rules */
 *{
   margin: 0;
   padding: 0;
@@ -13,18 +6,129 @@
 }
 body{
   background-color: black;
+  color: #999999;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+a{
+  color: #999999;
+  text-decoration: none;
+}
+a:hover{
   color: white;
 }
+.flex-header{
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 80px);
+}
 
-
+.flex-header>*{
+  border: white 1px solid;
+}
+.active_text{
+  color: white;
+}
+/* header rules */
 header{
   background-color: black;
-  border: white 1px solid;
   width: 15vw;
   height: calc(100vh - 80px);
   position: fixed;
   float: left;
 }
+#box_logo img{
+  width: 90% !important;
+  margin: 30px 30% 30px 10%;
+}
+.nav_menu_box{
+  padding: 10px;
+}
+.nav_menu_box_item{
+  margin-bottom: 10px;
+}
+.nav_menu_box_item a{
+  display: flex;
+}
+#box_nav_menu img{
+  width: 25px;
+  height: auto;
+  margin-left: 5px;
+}
+#box_nav_menu span{
+  margin-top: 5px;
+  margin-left: 10px;
+  height: auto;
+  font-size: 14px;
+}
+#box_nav_menu div:nth-child(2){
+  border-left: 3px solid #adff2f;
+}
+#plus{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#plus span:before {
+  content: '+';
+  width: 35px;
+  height: 37px;
+  color: black;
+  background-color: #999999;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 32px;
+  text-align: center;
+  vertical-align: middle;
+}
+#box_playlist{
+  font-size: 14px;
+}
+#new_playlist span{
+  display: block;
+  float: left;
+}
+#playlists{
+  margin-top: 30px;
+}
+#playlists ul li{
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+#box_profile > *{
+  margin-bottom: 10px;
+}
+#install img{
+  width: 18px;
+  height: auto;
+}
+#install span{
+  font-size: 14px;
+}
+
+#divider{
+  width: 90%;
+  height: 1px;
+  border-radius: 25%;
+  background-color: #999999;
+}
+
+#profile img{
+  width: 22px;
+  height: auto;
+  background-color: #999999;
+  border-radius: 100%
+}
+/* #profile *{
+  align-items: center;
+} */
+
+#profile span{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+/* upgrade bar */
 #upgrade_top_bar{
   position: fixed;;
   width: 85vw;
@@ -35,6 +139,8 @@ header{
 #upgrade_top_bar h1{
   text-align: right;
 }
+
+/* main rules */
 main{
   background-color: #141922;
   width: 85vw;
@@ -46,16 +152,14 @@ h1{
   color: white;
   font-size: 50px;
 }
+
+
+/* footer rules */
+
 footer{
-    background-color: #282828;
-    border: white 1px solid;
-    width: 100vw;
-    height: 80px;
-    bottom: 0;
-    position: fixed;
-}
-
-
-.flex-container{
-  display: flex;
+  background-color: #282828;
+  width: 100vw;
+  height: 80px;
+  bottom: 0;
+  position: fixed;
 }
