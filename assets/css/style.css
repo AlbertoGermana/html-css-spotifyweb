@@ -138,18 +138,22 @@ header{
 #upgrade_top_bar{
   position: fixed;
   height: 80px;
-  width: 88vw;
-  margin-left: 12vw;
+  width: 87vw;
   background-color: black;
   opacity: 0.4;
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
 }
 
 #upgrade_top_bar a{
-  text-align: right;
+  /* text-align: right; */
   padding: 15px;
   border: 2px solid white;
   border-radius: 25px;
+  margin-right: 50px;
 }
 
 /* main rules */
@@ -257,10 +261,11 @@ footer{
   height: 50px;
   width: auto;
 }
-#mult_lf_bar ul li{
+#mult_lf_bar ul li,
+#volume_buttons ul li{
   display: inline-block;
   vertical-align: middle;
-  margin: 15px 8px;
+  margin: 15px 5px;
 }
 
 /* footer barra secondo blocco */
@@ -283,12 +288,13 @@ footer{
 #console_buttons ul{
   text-align: center;
 }
-#console_buttons ul li{
+#console_buttons ul li,
+#mult_rg_bar div ul li{
   display: inline-block;
   list-style-type: none;
 }
   /* progress_bar */
-#progress_bar{
+.progress_bar{
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -308,32 +314,32 @@ footer{
   margin: 5px;
 }
 
-#total_bar{
+.total_bar{
   background-color: #5A5A5A;
   opacity: 0.7;
   width: 80%;
   height: 3px;
   border-radius: 18%;
-  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-#played_bar{
+.played_bar{
   background-color: #C1C1C1;
   width: 8%;
   height: 3px;
   border-radius: 18%;
   z-index: 2;
 }
-#cursor_bar{
+.cursor_bar{
   background-color: #C1C1C1;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 100%;
   position: absolute;
-  top: 64%;
-  left: 628px;
-  transform: translate(50%);
+  left: 7%;
 }
-#played_bar:hover{
+.played_bar:hover{
   background-color: #adff2f;
   width: 8%;
   height: 3px;
@@ -341,12 +347,16 @@ footer{
   z-index: 2;
 }
 
-#cursor_bar:hover{
-
-}
 /* footer barra terzo blocco */
 #mult_rg_bar{
-  border: red 1px solid;
   width: 20%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#volume_buttons ul li{
+}
+#volume_bar{
+  width: 60%;
 }
