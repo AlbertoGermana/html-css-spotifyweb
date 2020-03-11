@@ -236,12 +236,117 @@ h1{
 .circled img{
   border-radius: 100%;
 }
-/* footer rules */
 
+/* footer rules */
 footer{
   background-color: #282828;
   width: 100vw;
   height: 80px;
   bottom: 0;
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer barra primo blocco */
+#mult_lf_bar{
+  width: 20%;
+  height: 100%;
+}
+#mult_lf_bar img{
+  height: 50px;
+  width: auto;
+}
+#mult_lf_bar ul li{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 15px 8px;
+}
+
+/* footer barra secondo blocco */
+
+#mult_cnt_bar{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+  /* pulsanti */
+#console_buttons{
+  width: 100%;
+  height: 50%;
+  display: inline-flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: flex-end;
+}
+#console_buttons ul{
+  text-align: center;
+}
+#console_buttons ul li{
+  display: inline-block;
+  list-style-type: none;
+}
+  /* progress_bar */
+#progress_bar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#start_time,
+#end_time{
+  font-size: 10px;
+  color: white;
+  margin: 0 10px;
+}
+#start_time span{
+  margin: 5px;
+}
+#end_time span{
+  margin: 5px;
+}
+
+#total_bar{
+  background-color: #5A5A5A;
+  opacity: 0.7;
+  width: 80%;
+  height: 3px;
+  border-radius: 18%;
+  z-index: 1;
+}
+#played_bar{
+  background-color: #C1C1C1;
+  width: 8%;
+  height: 3px;
+  border-radius: 18%;
+  z-index: 2;
+}
+#cursor_bar{
+  background-color: #C1C1C1;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: 64%;
+  left: 628px;
+  transform: translate(50%);
+}
+#played_bar:hover{
+  background-color: #adff2f;
+  width: 8%;
+  height: 3px;
+  border-radius: 18%;
+  z-index: 2;
+}
+
+#cursor_bar:hover{
+
+}
+/* footer barra terzo blocco */
+#mult_rg_bar{
+  border: red 1px solid;
+  width: 20%;
+  height: 100%;
 }
