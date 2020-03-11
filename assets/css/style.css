@@ -19,7 +19,7 @@ a:hover{
 /* header rules */
 header{
   background-color: black;
-  width: 12vw;
+  width: 180px;
   height: calc(100vh - 80px);
   position: fixed;
   float: left;
@@ -33,9 +33,9 @@ header{
 .active_text{
   color: white;
 }
+
 #box_logo img{
-  width: 90% !important;
-  margin: 30px 30% 30px 10%;
+  margin: 30px 30% 30px 6px;
 }
 .nav_menu_box{
   padding: 10px;
@@ -60,7 +60,7 @@ header{
   height: auto;
   font-size: 14px;
 }
-#box_nav_menu div:nth-child(2){
+#box_nav_menu div:first-child{
   border-left: 3px solid #adff2f;
 }
 #plus{
@@ -80,7 +80,7 @@ header{
   vertical-align: middle;
 }
 #box_playlist{
-  font-size: 14px;
+  font-size: 12px;
   height: 60%;
 }
 #new_playlist span{
@@ -141,29 +141,31 @@ header{
 #upgrade_top_bar{
   position: fixed;
   height: 80px;
-  width: 87vw;
+  width: calc(100vw - 180px);
   background-color: black;
   opacity: 0.4;
   text-align: right;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 #upgrade_top_bar a{
-  /* text-align: right; */
-  padding: 15px;
+  padding: 10px;
   border: 2px solid white;
   border-radius: 25px;
   margin-right: 50px;
 }
 
+#upgrade_top_bar a:hover{
+  padding: 15px;
+}
+
 /* main rules */
 main{
   background-color: #141922;
-  width: 87vw;
-  margin-left: 12vw;
+  width: calc(100vw - 180px);
+  margin-left: 180px;
   float: left;
 }
 h1{
@@ -192,6 +194,7 @@ h1{
 #main_slider{
   margin-top: 40px;
   margin-left: 16px;
+  width: 100%;
 }
 /* primo slider */
 .squared ul,
@@ -201,17 +204,15 @@ h1{
 
 .slider h1{
   margin-top: 20px;
-  /* margin-left: 16px; */
   font-size: 18px;
   font-weight: bold;
 }
 .slider>div>ul{
   display: flex;
-  /* padding-left: 10px; */
+  flex-wrap: wrap;
 }
 .slider>div>ul>li{
   display: inline-block;
-  align-items: flex-start;
   list-style-type: none;
   width: calc(100% / 6);
   padding: 15px 12px 15px 0;
