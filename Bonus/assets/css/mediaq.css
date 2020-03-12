@@ -45,11 +45,11 @@
     width: 50px;
   }
   main{
-    margin-left: 50px;
-    width: calc(100vw - 50px);
+    width: calc(100% - 50px);
   }
   #upgrade_top_bar{
     width: calc(100vw - 50px);
+    margin-left: 50px;
   }
 
 }
