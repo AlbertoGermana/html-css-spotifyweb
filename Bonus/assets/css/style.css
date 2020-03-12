@@ -184,7 +184,7 @@ h1{
 /* sezione categorie */
 #categories ul{
   width: 100%;
-  margin-top: 80px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -204,6 +204,11 @@ h1{
   margin-left: 16px;
 }
 /* primo slider */
+.squared,
+.circled{
+  overflow-x: hidden;
+}
+
 .squared ul,
 .circled ul{
   width: 100%;
@@ -216,25 +221,26 @@ h1{
 }
 .slider>div>ul{
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .slider>div>ul>li{
   display: inline-block;
   list-style-type: none;
-  width: calc(100% / 6);
-  padding: 15px 12px 15px 0;
+  margin: 15px 12px 15px 0;
 }
 .slider_item{
   width: 96%;
   position: relative;
 }
 .slider_item img{
-  width: 100%;
+  width: 260px;
+  height: 260px;
 }
 .slider_titles{
   font-size: 12px;
   text-align: center;
   margin: 10px 0;
+  width: 260px;
 }
 .slider_titles:hover{
   color: white;
@@ -243,8 +249,8 @@ h1{
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 260px;
+  height: 260px;
   background-color: black;
   opacity: 0;
 }
