@@ -1,4 +1,4 @@
-/* generic rules */
+/* +++++++++++++++ generic rules +++++++++++++++ */
 *{
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ a{
 a:hover{
   color: white;
 }
-/* header rules */
+/* +++++++++++++++ header rules +++++++++++++++ */
 header{
   background-color: black;
   width: 180px;
@@ -33,7 +33,6 @@ header{
 .active_text{
   color: white;
 }
-
 #box_logo img{
   margin: 30px 30% 30px 6px;
 }
@@ -80,8 +79,8 @@ header{
   vertical-align: middle;
 }
 #box_playlist{
-  font-size: 12px;
   height: 60%;
+  overflow-y: hidden;
 }
 #new_playlist span{
   display: block;
@@ -99,7 +98,8 @@ header{
   box-sizing: content-box;
 }
 #box_profile > *{
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 #install img{
   width: 18px;
@@ -107,13 +107,14 @@ header{
 }
 #install span{
   font-size: 14px;
+  margin-left: 6px;
 }
-
 #divider{
   width: 90%;
   height: 1px;
   border-radius: 25%;
   background-color: #999999;
+  margin: 10px 5%;
 }
 
 #profile img{
@@ -121,14 +122,6 @@ header{
   background-color: #999999;
   border-radius: 100%
 }
-#profile,
-#install,
-#divider{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #profile span{
   font-size: 16px;
   font-weight: bold;
@@ -136,8 +129,7 @@ header{
   margin-top: 3px;
 }
 
-
-/* upgrade bar */
+/*  -------- upgrade bar --------  */
 #upgrade_top_bar{
   position: fixed;
   height: 80px;
@@ -145,31 +137,27 @@ header{
   background-color: black;
   margin-left: 180px;
   opacity: 0.4;
-  text-align: right;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   z-index : 2;
 }
-
 #upgrade_link a{
   padding: 10px;
   border: 2px solid white;
   border-radius: 25px;
   top: 18px;
   right: 50px;
-  opacity: 1;
   background-color: black;
   position: fixed;
-  z-index: 3;
+  z-index: 2;
 }
-
 #upgrade_link a:hover{
   padding: 15px;
   top: 15px;
 }
 
-/* main rules */
+/* +++++++++++++++ main rules +++++++++++++++ */
 main{
   background-color: #141922;
   width: calc(100% - 180px);
@@ -182,9 +170,8 @@ h1{
   font-size: 50px;
 }
 
-/* sezione categorie */
+/*  -------- sezione categorie --------  */
 #categories ul{
-  width: 100%;
   margin-top: 100px;
   text-align: center;
 }
@@ -192,6 +179,7 @@ h1{
 #categories ul li{
   display: inline-block;
   padding-right: 30px;
+  list-style-type: none;
 }
 #categories ul li a{
   text-transform: uppercase;
@@ -199,51 +187,47 @@ h1{
   font-size: 14px;
 }
 
-/* sezine con articoli */
+/*  -------- sezione con articoli --------  */
 #main_slider{
   margin-top: 40px;
   margin-left: 16px;
 }
-/* primo slider */
+/* -------- slider -------- */
 .squared,
 .circled{
   overflow-x: hidden;
 }
-
 .squared ul,
 .circled ul{
   width: 100%;
 }
-
 .slider h1{
   margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 23px;
 }
 .slider>div>ul{
   display: flex;
-  /* flex-wrap: wrap; */
 }
 .slider>div>ul>li{
   display: inline-block;
   list-style-type: none;
   margin: 15px 12px 15px 0;
 }
-.slider_item{
+.card{
   width: 96%;
   position: relative;
 }
-.slider_item img{
+.card img{
   width: 260px;
   height: 260px;
 }
-.slider_titles{
+.card_titles{
   font-size: 12px;
   text-align: center;
   margin: 10px 0;
   width: 260px;
 }
-.slider_titles:hover{
+.card_titles:hover{
   color: white;
 }
 .overlay{
@@ -262,7 +246,6 @@ h1{
 #most_popular div.overlay{
   border-radius: 100%;
 }
-
 .overlay i{
   position: absolute;
   top: 50%;
@@ -270,7 +253,6 @@ h1{
   transform: translate(-50%, -50%);
   font-size: 48px;
 }
-
 .item_subtitle{
   font-size: 10px;
   text-align: center;
@@ -280,14 +262,11 @@ h1{
   text-align: left;
   margin-top: 5px;
 }
-#most_popular{
-  margin-bottom: 80px;
-}
 .circled img{
   border-radius: 100%;
 }
 
-/* footer rules */
+/* +++++++++++++++ footer rules +++++++++++++++ */
 footer{
   background-color: #282828;
   width: 100vw;
@@ -298,7 +277,7 @@ footer{
   justify-content: space-between;
 }
 
-/* footer barra primo blocco */
+/*  -------- footer barra primo blocco --------  */
 #mult_lf_bar{
   width: 20%;
   height: 100%;
@@ -314,7 +293,7 @@ footer{
   margin: 15px 5px;
 }
 
-/* footer barra secondo blocco */
+/*  -------- footer barra secondo blocco --------  */
 
 #mult_cnt_bar{
   width: 50%;
@@ -322,7 +301,7 @@ footer{
   display: flex;
   flex-direction: column;
 }
-  /* pulsanti */
+/*  -------- pulsanti -------- */
 #console_buttons{
   width: 100%;
   height: 50%;
@@ -339,7 +318,7 @@ footer{
   display: inline-block;
   list-style-type: none;
 }
-  /* progress_bar */
+/* -------- progress_bar -------- */
 .progress_bar{
   width: 100%;
   display: flex;
@@ -393,7 +372,7 @@ footer{
   z-index: 2;
 }
 
-/* footer barra terzo blocco */
+/* -------- footer barra terzo blocco -------- */
 #mult_rg_bar{
   width: 20%;
   height: 100%;
