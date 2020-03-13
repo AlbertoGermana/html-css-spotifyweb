@@ -7,6 +7,7 @@
 body{
   background-color: black;
   color: white;
+  font-family: Montserrat, Arial, sans-serif;
 }
 
 /* header rules */
@@ -143,26 +144,56 @@ footer{
   height: 70px;
   display: flex;
   justify-content: space-between;
-  /* DEBUG: */
-  border: white 1px solid;
 }
-
+#bar-inout{
+  margin-left: 20px;
+}
+#bar-inout i,
+#bar-main i,
+#bar-leave i{
+  color: white;
+}
 
 .bar-btn{
   display: flex;
-  border: 1px black solid;
 }
+.bar-btn a{
+  color: white;
+  text-decoration: none;
+}
+#bar-inout i:hover{
+  color: rgba(255,255,255,0.4);
+}
+
 .btn-normal{
-  /* DEBUG:  */
-  width: 55px;
   height: 70px;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 12px;
 }
+.btn-normal a{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.btn-normal i{
+  font-size: 28px;
+  text-align: center;
+}
+
+.btn-normal span{
+  font-size: 10px;
+
+}
+
 .bar-btn-opt{
   /* DEBUG:  */
   width: 20px;
   height: 70px;
-  background-color: pink;
+
 }
 .btn-text{
   background-color: white;
