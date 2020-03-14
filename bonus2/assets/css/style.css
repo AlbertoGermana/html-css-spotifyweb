@@ -73,14 +73,15 @@ main{
 
 #user-group{
   width: 95%;
-  height: 90%;
-  /* DEBUG:  */
-  background-color: grey;
+  height: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
+  /* DEBUG:  */
+  background-color: grey;
+
 }
 
 .user-main{
@@ -135,25 +136,24 @@ footer{
   background-color: #202224;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   box-sizing: content-box;
 }
 #bar-inout,
 #bar-main,
 #bar-leave{
+  /* width: calc(100%/5); */
   height: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #bar-inout{
   margin-left: 20px;
 }
-#bar-inout i,
-#bar-main i,
-#bar-leave i{
-  color: white;
+#bar-main{
+  /* align-self: center; */
 }
-
 .bar-btn{
   display: flex;
 }
@@ -161,10 +161,6 @@ footer{
   color: white;
   text-decoration: none;
 }
-#bar-inout i:hover{
-  color: rgba(255,255,255,0.4);
-}
-
 .btn-normal{
   height: 70px;
   display: flex;
@@ -179,24 +175,53 @@ footer{
   justify-content: center;
   align-items: center; */
 }
+.btn-normal a i{
+  color: white;
+}
+.btn-normal a i:hover{
+  color: rgba(255,255,255,0.4);
+}
 .btn-normal i{
   font-size: 28px;
   text-align: center;
 }
-
 .btn-normal span{
   font-size: 10px;
-
 }
-
+.relative{
+  position: relative;
+}
+.users-notification{
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+.chat-notification{
+  position: absolute;
+  top: 2px;
+  left: 19px;
+}
+.badge{
+  background-color: green;
+  border-radius: 100%;
+  padding: 3px;
+}
+#share-screen{
+  width: auto;
+  height: 26px;
+}
+#share-screen:hover{
+  opacity: 0.5;
+}
 .bar-btn-opt{
   /* DEBUG:  */
   width: 20px;
   height: 70px;
-
 }
 .btn-text{
-  background-color: white;
-  width: 150px;
-
+  /* width: 150px; */
+}
+#leave-meeting{
+  color: red;
+  font-size: 24px;
 }
