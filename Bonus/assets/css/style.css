@@ -80,7 +80,7 @@ header{
 }
 #box_playlist{
   height: 60%;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 #new_playlist span{
   display: block;
