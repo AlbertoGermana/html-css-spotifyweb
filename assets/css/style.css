@@ -81,6 +81,7 @@ header{
 #box_playlist{
   font-size: 12px;
   height: 60%;
+  overflow-y: auto;
 }
 #new_playlist span{
   display: block;
